@@ -1,0 +1,271 @@
+* {
+
+    /* outline: 1px solid turquoise; */
+}
+
+.header01 {}
+
+.header01 .inner {
+    display: flex;
+    align-items: center;
+    width: 1170px;
+    margin: 0 auto;
+    height: 120px;
+}
+
+.header01 .gnb {
+    margin: 0 0 0 auto;
+}
+
+.header01 .gnb>ul {
+    display: flex;
+    gap: 60px;
+}
+
+.header01 .gnb>ul>li>a {
+    display: block;
+    line-height: 120px;
+}
+
+.header02 {}
+
+
+.header02 .inner {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    height: 80px;
+
+
+
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.header02 .gnb {
+    margin: 0 auto 0 200px;
+}
+
+
+.header02 .gnb>ul {
+    display: flex;
+    gap: 40px;
+
+}
+
+.header02 .gnb>ul>li>a {
+    display: block;
+    line-height: 80px;
+}
+
+.header03 {}
+
+.header03 .inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 1170px;
+    margin: 0 auto;
+    height: 100px;
+
+}
+
+.header03 h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header03 .gnb {
+    margin: 0 auto 0 0;
+}
+
+.header03 .gnb>ul {
+    display: flex;
+    gap: 30px;
+
+}
+
+.header03 .gnb>ul>li>a {
+    display: block;
+    line-height: 100px;
+}
+
+.header04 {}
+
+
+.header04 h1 {
+
+    margin: 0 auto;
+
+}
+
+.header04 .inner {
+    display: flex;
+    align-items: center;
+    width: 1170px;
+    height: 100px;
+    margin: 0 auto;
+
+}
+
+.header04 .gnb {
+    flex: 1;
+    order: -1;
+}
+
+.header04 .gnb>ul {
+    display: flex;
+    gap: 30px;
+
+}
+
+.header04 .gnb>ul>li>a {
+    display: block;
+    line-height: 100px;
+}
+
+
+.header04 .util {
+    flex: 1;
+    text-align: right;
+}
+
+.header05 {}
+
+.header05 .inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 1170px;
+    height: 120px;
+    margin: 0 auto;
+}
+
+.header05 .gnb {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header05 .gnb>ul {
+    display: flex;
+    gap: 30px;
+}
+
+.header05 .gnb>ul>li>a {
+    display: block;
+    line-height: 120px;
+}
+
+.header05 .util {
+    margin: 0 0 0 auto;
+}
+
+
+.header06 {}
+
+.header06 .inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+.header06 h1 {
+    position: absolute;
+    left: 80px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.header06 .gnb {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+
+.header06 .util {
+    position: absolute;
+    right: 80px;
+    top: 50%;
+    transform: translate(0, -50%);
+
+}
+
+.header06 .gnb>ul {
+    display: flex;
+    gap: 30px;
+}
+
+.header06 .gnb>ul>li>a {
+    display: block;
+    line-height: 120px;
+}
+
+.header_dropdown {
+
+    border-bottom: 1px solid #ddd;
+}
+
+.header_dropdown .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1170px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.header_dropdown .gnb>ul {
+    display: flex;
+
+}
+
+
+.header_dropdown .gnb>ul>li>a {
+    display: block;
+    line-height: 100px;
+    padding: 0 30px;
+
+}
+
+.header_dropdown .gnb>ul>li {
+    position: relative;
+}
+
+.header_dropdown .gnb>ul>li .sub {
+    /* display: none; 대신 애니메이션(움직임) 줄때opactity visibility */
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    background-color: #fff;
+    border: 4px solid#ddd;
+
+    width: 200px;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.header_dropdown .gnb>ul>li:hover .sub {
+    /* display: block; 대신 애니메이션(움직임) 줄때opacity visibility: ; */
+    top: 80px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.header_dropdown .gnb>ul>li .sub a {
+    display: block;
+    text-align: center;
+    line-height: 40px;
+}
+
+.header_dropdown .gnb>ul>li .sub li~li {
+    border-top: 1px solid #ddd;
+}
